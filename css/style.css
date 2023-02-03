@@ -359,6 +359,7 @@ margin-bottom: 72px;
 }
 .customers-link:is(:hover,:focus) {
     border-color: var(--ocean);
+    color: var(--ocean);
 }
 .customers-icon{
     fill:currentColor;
