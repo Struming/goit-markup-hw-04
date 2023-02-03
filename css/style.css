@@ -47,6 +47,7 @@ img{
 }
 /*  ___________________задати змінну________________________ */
 :root{
+--icon:#7c85f0;
 --soc: #5c5c6d;
 --navyblue-headlines: #2E2F42;
 --title:#FFFFFF;
@@ -58,7 +59,7 @@ img{
 --border:#E7E9FC;
 --set:24px;
 --fill: #8e8f99
--
+
 }
 /* HEADER */
 .header-container{
@@ -272,7 +273,7 @@ margin-bottom: 72px;
 }
 .content-resume {
 padding-top: 32px;
-padding-bottom: 16px;
+padding-bottom: 32px;
 background:var(--title);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
@@ -326,6 +327,7 @@ margin-bottom: 8px;
 .resume-soc-link:is(:hover,:focus) {
     background-color: var(--portfolio-button);
 }
+
 /*______________________ секція 5 */
 .customers-text{
 font-size: 36px;
@@ -345,19 +347,23 @@ margin-bottom: 72px;
 .customers-link {
     width: 168px;
     height: 88px;
-    border: 1px solid rgb(179, 186, 186);
+    border: 1px solid rgb(153, 166, 166);
     border-radius: 5px;
     display: flex;
     align-items:center;
     justify-content: center;
 }
-.customers-icon {
-    fill:  var(--fill);
+.customers-link:is(:hover,:focus) {
+    border-color: var(--icon);
+}
+.customers-icon{
+    fill:#8E8F99;
 }
 
-.customers-link:is(:hover,:focus) {
-    background-color: var(--portfolio-button) ;
+.customers-icon:is(:hover,:focus) {
+    fill: var(--icon);
 }
+
 /*______________________ footer */
 .footer {
 background-color:var(--layout-paragrph);
@@ -409,7 +415,7 @@ display: block;
     height: 40px;
 }
 .footer-soc-link:is(:hover,:focus) {
-    background-color: var(--portfolio-button);
+    background-color: var(--icon);
 }
 /*____________________________ portfolio __________________________________*/
 .button-list{
@@ -435,6 +441,7 @@ display: block;
 }
 .button-list-text:hover,
 .button-list-text:focus{
+    border-color: var(--iris);
     background-color: var(--iris);
     color: var(--cloud);
     box-shadow: 0px 2px 0px rgb(188, 186, 185);
@@ -454,10 +461,17 @@ display: block;
     row-gap: 48px;
     column-gap: 24px;
 }
+.gallery-link:is(:hover,:focus){
+    background-color: var(--title) ;
+    box-shadow: 0px 2px 0px  rgb(220, 219, 219);
+}
+
 .title-port:is(:hover,:focus){
     background-color: var(--title) ;
-    box-shadow: 0px 2px 0px  rgb(188, 186, 185);
+    box-shadow: 0px 2px 0px  rgb(220, 219, 219);
 }
+
+
 .title-port{
     padding-left: 16px;
     padding-top: 32px;
@@ -465,6 +479,7 @@ display: block;
     background:var(--title);
     border: 1px solid var(--border);
     border-top: none;
+    
 }
 .photo-title {
 font-weight: 500;
