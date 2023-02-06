@@ -163,14 +163,12 @@ color: var(--navyblue-headlines);
 }
 /* _____________Section 1 - hero */
 .hero{
-    width: 1440px;
-    height: 600px;
+    max-width: 1440px;
     margin: 0 auto;
     background-image: linear-gradient(
     rgba(46, 47, 66, 0.4 ),
     rgba(46, 47, 66, 0.4 )),
     url(../images/hero\ image\ \(1\).jpg);
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -194,7 +192,7 @@ margin-bottom: 48px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    background-color:var(--portfolio-button);
+    background-color:var(--iris);
     color:var(--title);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -205,7 +203,7 @@ margin-bottom: 48px;
 }
 .hero-button:hover,
 .hero-button:focus{
-background:var(--iris);
+background:var(--ocean);
 }
 /*_________________ Section 2 _________________*/
 .advant-link {
@@ -268,6 +266,7 @@ margin-bottom: 72px;
     background:var(--cloud);
 }
 .resume-itm{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     flex-basis: calc(100% / 3 - var(--set));
 }
 .resume-list{
@@ -275,10 +274,11 @@ margin-bottom: 72px;
     gap: var(--set);
 }
 .content-resume {
+padding-right: 16px;
+padding-left: 16px;
 padding-top: 32px;
 padding-bottom: 32px;
 background:var(--title);
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 }
 .title-our-time {
@@ -309,14 +309,12 @@ margin-bottom: 8px;
 }
 /*______________________ work SVG*/
 .resume-soc-list {
-    margin-left: 8px;
-    margin-right: 8px;
     display: flex;
     gap: 24px;
 }
 .resume-soc-item {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
 }
 .resume-soc-link {
     width: 100%;
@@ -468,15 +466,13 @@ display: block;
 }
 .gallery-link:is(:hover,:focus){
     background-color: var(--title) ;
-    box-shadow: 0px 2px 0px  rgb(220, 219, 219);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-.title-port:is(:hover,:focus){
-    background-color: var(--title) ;
-    box-shadow: 0px 2px 0px  rgb(220, 219, 219);
+.linkk{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    display: block;
+    text-decoration: none;
 }
-
-
 .title-port{
     padding-left: 16px;
     padding-top: 32px;
